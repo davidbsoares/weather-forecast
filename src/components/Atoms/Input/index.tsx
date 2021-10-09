@@ -2,12 +2,13 @@ import styled from 'styled-components';
 import COLORS from '../../constants/colors';
 
 const Input = styled.input`
-  width: 200px;
-  height: 30px;
+  width: 100%;
+  max-width: 400px;
+  height: 45px;
 
   text-align: center;
   font-family: Roboto;
-  font-size: 0.7rem;
+  font-size: 1.25rem;
 
   color: ${COLORS.secondary};
 

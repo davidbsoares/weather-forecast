@@ -4,7 +4,7 @@ import COLORS from '../../constants/colors';
 const Button = styled.button`
   padding: 0.5rem 1rem;
 
-  width: 100px;
+  width: 150px;
 
   outline: 0;
   border: 0;
@@ -15,7 +15,7 @@ const Button = styled.button`
 
   font-family: Roboto;
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 1rem;
 
   cursor: pointer;
 
