@@ -41,13 +41,17 @@ const Weather: React.FC<DataTypes> = ({ data, handleWeatherData }) => {
 
   const sunRise =
     sys &&
-    `${new Date(sys?.sunrise).getHours()}:${new Date(
-      sys?.sunrise
-    ).getMinutes()}`;
+    new Date(sys?.sunrise * 1000).toLocaleTimeString('pt-br', {
+      hour: '2-digit',
+      minute: '2-digit',
+    });
 
   const sunSet =
     sys &&
-    `${new Date(sys?.sunset).getHours()}:${new Date(sys?.sunset).getMinutes()}`;
+    new Date(sys?.sunset * 1000).toLocaleTimeString('pt-br', {
+      hour: '2-digit',
+      minute: '2-digit',
+    });
 
   return (
     <Container>
