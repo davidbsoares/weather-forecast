@@ -43,8 +43,6 @@ const Search = ({ handleWeatherData }: SearchProps) => {
     }
   }
 
-  console.log(loading);
-
   return (
     <Container onSubmit={(e) => getData(value, e)}>
       <Input
